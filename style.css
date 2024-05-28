@@ -1,0 +1,62 @@
+body{
+    margin: 0px;
+}
+
+main{
+    margin-left: 20px;
+    margin-right: 20px
+}
+
+h1{
+    text-align: center;
+}
+.navbar ul{
+    list-style-type: none;
+    background-color: gray;
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+}
+
+.navbar a{
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    text-align: center;
+}
+.navbar a:hover{ /*when you hover over the nav text */
+    background-color: TBD;
+} 
+
+.navbar li{
+    float: left;
+}
+
+header {
+    height: 200px; /* Adjust height as needed */
+    background-size: cover;
+    background-position: center;
+    background-image: url('computer-header.png');
+}
+
+/* Media query for min-width: 1024px */
+@media (min-width: 1024px) {
+    header {
+        background-image: url('computer-header.png');
+    }
+}
+
+/* Media query for min-width: 768px and max-width: 1023px */
+@media (min-width: 768px) and (max-width: 1023px) {
+    header {
+        background-image: url('path/to/medium-image.jpg');
+    }
+}
+
+/* Media query for max-width: 767px */
+@media (max-width: 767px) {
+    header {
+        background-image: url('path/to/small-image.jpg');
+    }
+}
