@@ -1,29 +1,36 @@
 body{
-    margin: 0px;
+    margin: 0em;
 }
 
 main{
-    margin-left: 20px;
-    margin-right: 20px
+    margin-left: 1em;
+    margin-right: 1em
 }
 
-h1{
+h1{ /* header text details */
     text-align: center;
+    font-size: 4em;
+    padding: .5em; 
+    margin: 0em; /* space at the top */
+    color: black;
+    
 }
-.navbar ul{
+.navbar ul {
     list-style-type: none;
-    background-color: gray;
-    padding: 0px;
-    margin: 0px;
+    background-color: #e43d12;
+    padding: 0;
+    margin: 0;
     overflow: hidden;
+    display: flex; /* Flexbox for horizontal alignment */
+    justify-content: right; /* make HTFS go on the right*/
 }
 
-.navbar a{
+.navbar a {
     color: white;
     text-decoration: none;
-    padding: 15px;
+    padding: 1em; /* how big the nav bar is */
     display: block;
-    text-align: center;
+    text-align: right;
 }
 .navbar a:hover{ /*when you hover over the nav text */
     background-color: TBD;
@@ -34,7 +41,7 @@ h1{
 }
 
 header {
-    height: 200px; /* Adjust height as needed */
+    height: 10em; /* Adjust height as needed */
     background-size: cover;
     background-position: center;
     background-image: url('computer-header.png');
