@@ -67,3 +67,27 @@ header {
         background-image: url('path/to/small-image.jpg');
     }
 }
+
+
+.History{
+color: black;
+background-color: #d8d8d8;
+width: 75%;
+height: 40%;
+border-radius: 2.5%;
+position: relative;
+font-size: 1.5em;
+font-family: 'San Francisco', Helvetica, Arial, san-serif;
+}
+
+.History::before {
+    content: '';
+    position: absolute;
+    border-left: 1em solid transparent;
+    border-right: 1em solid transparent;
+    border-top: 1em solid transparent;
+    border-bottom: 1em solid #d8d8d8;
+    top: -45px;
+    left: 20px;
+    
+}
