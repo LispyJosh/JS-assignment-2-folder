@@ -76,7 +76,7 @@ width: 75%;
 height: 40%;
 border-radius: 2.5%;
 position: relative;
-font-size: 1.5em;
+font-size: 2em;
 font-family: 'San Francisco', Helvetica, Arial, san-serif;
 }
 
@@ -87,7 +87,32 @@ font-family: 'San Francisco', Helvetica, Arial, san-serif;
     border-right: 1em solid transparent;
     border-top: 1em solid transparent;
     border-bottom: 1em solid #d8d8d8;
-    top: -45px;
-    left: 20px;
+    top: -60px; 
+    left: 20px; /* dont change, its for the bubble */
     
 }
+
+.Today{
+    color: white;
+    text-align: left;
+    background-color: #218aff;
+    width: 75%;
+    height: 40%;
+    border-radius: 2.5%;
+    position: relative;
+    right: -25%;
+    font-size: 2em;
+    font-family: 'San Francisco', Helvetica, Arial, san-serif;
+    }
+    
+    .Today::before {
+        content: '';
+        position: absolute;
+        border-left: 1em solid transparent;
+        border-right: 1em solid transparent;
+        border-top: 1em solid transparent;
+        border-bottom: 1em solid #218aff;
+        top: -60px; /* dont change, its for the bubble */
+        right: 20px; /* dont change, its for the bubble */
+        
+    }
