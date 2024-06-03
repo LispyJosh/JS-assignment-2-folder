@@ -2,10 +2,7 @@ body{
     margin: 0em;
 }
 
-main{
-    margin-left: 1em;
-    margin-right: 1em
-}
+
 
 h1{ /* header text details */
     text-align: center;
@@ -13,6 +10,8 @@ h1{ /* header text details */
     padding: .5em; 
     margin: 0em; /* space at the top */
     color: black;
+    margin-left: 1em;
+    margin-right: 1em;
     
 }
 .navbar ul {
@@ -78,6 +77,9 @@ border-radius: 2.5%;
 position: relative;
 font-size: 2em;
 font-family: 'San Francisco', Helvetica, Arial, san-serif;
+margin-left: 1em;
+margin-right: 1em;
+margin-top: 2em;
 }
 
 .History::before {
@@ -103,6 +105,8 @@ font-family: 'San Francisco', Helvetica, Arial, san-serif;
     right: -25%;
     font-size: 2em;
     font-family: 'San Francisco', Helvetica, Arial, san-serif;
+    margin-left: -1em;
+    margin-right: -1em;
     }
     
     .Today::before {
@@ -115,4 +119,25 @@ font-family: 'San Francisco', Helvetica, Arial, san-serif;
         top: -60px; /* dont change, its for the bubble */
         right: 20px; /* dont change, its for the bubble */
         
+    }
+
+    .back {
+        background-color: #ebe9e1;
+        display: block;
+        padding: 1em;
+        background-size: cover;
+
+    }
+
+    .Five{
+        background-color: #e43d12;
+        color: white;
+        font-family: 'San Francisco', Helvetica, Arial, san-serif;
+        width: 50%;
+        height: 40%;
+        border-radius: 2.5%;
+        position: relative;
+        font-size: 5em;
+        text-align: center;
+
     }

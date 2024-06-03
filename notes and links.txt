@@ -6,3 +6,10 @@ history is from Chat GPT
 
 font family is apples text: https://stackoverflow.com/questions/32660748/how-to-use-apples-san-francisco-font-on-a-webpage
 
+Apple text message colours: https://www.color-hex.com/color-palette/13071
+ 
+#39ff5a Green (darkened colur to read easier) #2ed44a
+#218aff Blue (
+#d8d8d8 Grey
+
+
