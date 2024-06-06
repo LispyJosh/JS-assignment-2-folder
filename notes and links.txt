@@ -13,3 +13,18 @@ Apple text message colours: https://www.color-hex.com/color-palette/13071
 #d8d8d8 Grey
 
 
+https://en.wikipedia.org/wiki/Mobile_game
+Chat
+
+1. Tetris, Nokia, 1994
+2. Snake, Nokia, 1997
+3. Memory, Nokia, 1997
+4. Logic, Nokia, 1997
+5. Snakes, Nokia, 1998
+
+app icons 48px X 48px
+
+
+
+
+

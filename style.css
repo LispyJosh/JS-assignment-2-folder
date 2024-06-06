@@ -123,9 +123,10 @@ margin-top: 2em;
 
     .back {
         background-color: #ebe9e1;
-        display: block;
+        display: flex;
         padding: 1em;
         background-size: cover;
+        align-items: flex-start; /* Align items at the start of the cross axis (top) */
 
     }
 
@@ -139,5 +140,31 @@ margin-top: 2em;
         position: relative;
         font-size: 5em;
         text-align: center;
+        margin-right: .5em; /* this is just spacing between the bubble and ul
 
     }
+
+    .image-list {
+        list-style-type: none; /* Remove default bullets */
+        padding: 0; /* Remove default padding */
+        margin-top: 2.5%; /* to move over buble, so its in line with logos */
+      }
+      
+      .image-list li {
+        display: flex; /* Use flexbox for alignment */
+        align-items: center; /* Vertically center the items */
+        margin-bottom: 10px; /* Space between items */
+      }
+      
+      .image-list li img {
+        margin-right: 10px; /* Space between image and text */
+        width: 50px; /* Set the width of the image */
+        height: 50px; /* Set the height of the image */
+        border-radius: 2.5%; /* Optional: make the image circular */
+      }
+      
+      .image-list li span {
+        font-family: Arial, sans-serif; /* Font family */
+        font-size: 16px; /* Font size */
+        color: black; /* Text color */
+      }
