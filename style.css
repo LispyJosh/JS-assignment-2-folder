@@ -67,6 +67,15 @@ header {
     }
 }
 
+.BackgroundColour{
+background-color: #ebe9e1;
+height: 100%; /* takes up full height */
+width: 100%; /* take up full width */
+display: flex; /* enable flex box */
+flex-direction: column; 
+justify-content: space-between; /* Defines how space is distributed between and around flex items along the main axis (vertical in this case, because flex-direction is set to column).*/
+}
+
 
 .History{
 color: black;
@@ -107,6 +116,8 @@ margin-top: 2em;
     font-family: 'San Francisco', Helvetica, Arial, san-serif;
     margin-left: -1em;
     margin-right: -1em;
+    margin-top: 1em; /* lower blue bubble from grey bubble*/
+    margin-bottom: 1em; /* highers blue bubble from next line */
     }
     
     .Today::before {
@@ -122,7 +133,7 @@ margin-top: 2em;
     }
 
     .back {
-        background-color: #ebe9e1;
+        background-color: #EFB11D;
         display: flex;
         padding: 1em;
         background-size: cover;
@@ -168,3 +179,9 @@ margin-top: 2em;
         font-size: 16px; /* Font size */
         color: black; /* Text color */
       }
+
+    /* snake is going below */
+
+
+
+
