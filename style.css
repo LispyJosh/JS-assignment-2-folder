@@ -189,7 +189,7 @@ margin-top: 2em;
     border: .5em solid; /* border for game */
 }
 
-#score{
+#scoreText{
     font-family: "Permanent Marker", cursive;
     font-size: 3em;
 }
@@ -202,7 +202,7 @@ margin-top: 2em;
     border: .1em solid; /* border thickness */
     border-radius: .5em; /* to make the border more round */
     cursor: pointer; /* changes look of cursor when hovering over reset button */
-    
+
 
 
 
