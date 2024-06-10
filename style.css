@@ -182,10 +182,33 @@ margin-top: 2em;
 
     /* snake is going below */
 
+#gameContainer{
+    text-align: center; 
+}
 #gameBoard{
-    border: .5em solid;
+    border: .5em solid; /* border for game */
 }
 
-Go to time 1:33!!!
+#score{
+    font-family: "Permanent Marker", cursive;
+    font-size: 3em;
+}
+
+#resetBtn{
+    font-family: "Permanent Marker", cursive;
+    font-size: 2em; /* button font size */
+    width: 3.5em; /* width of button border */
+    height: 1.75em; /* height of button border */
+    border: .1em solid; /* border thickness */
+    border-radius: .5em; /* to make the border more round */
+    cursor: pointer; /* changes look of cursor when hovering over reset button */
+    
+
+
+
+
+}
+
+
 
 
