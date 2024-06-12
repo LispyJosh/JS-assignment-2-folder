@@ -25,11 +25,11 @@ let score = 0;
 /* making the snake */ /* making an array of objects/body */
 
 let snake = [ /*Square brackets are used to define arrays. An array is an ordered collection of elements. */
-    {x:unitSize * 4 y:0},
-    {x:unitSize * 3 y:0},
+    {x:unitSize * 4, y:0},
+    {x:unitSize * 3, y:0},
     {x:unitSize * 2, y:0}, /* seperate object due to comma */
-    {x:unitSize, y:0}, /*each one is a body part */
-    {x:0, y:0} /*starting the snake at the top left */
+    {x: unitSize, y: 0}, /*each one is a body part */
+    {x: 0, y:0} /*starting the snake at the top left */
 ];
 
 /* adding an event listener to listen for key events */
@@ -54,7 +54,7 @@ function createFood(){
 }; /* find a random place to place a food item*/
 function drawFood(){
     ctx.fillStyle = foodColor;
-    ctx.fillRect(foodX, food, unitSize, unitSize); /*to fill a rectangle */
+    ctx.fillRect(foodX, foodY, unitSize, unitSize); /*to fill a rectangle */
 }; /* I will have to paint the food within gameboard */
 function moveSnake(){};
 function drawSnake(){};
