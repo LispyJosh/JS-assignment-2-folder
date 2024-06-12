@@ -25,9 +25,9 @@ let score = 0;
 /* making the snake */ /* making an array of objects/body */
 
 let snake = [ /*Square brackets are used to define arrays. An array is an ordered collection of elements. */
-    {x:unitSize * 4, y:0},
-    {x:unitSize * 3, y:0},
-    {x:unitSize * 2, y:0}, /* seperate object due to comma */
+    {x: unitSize * 4, y:0},
+    {x: unitSize * 3, y:0},
+    {x: unitSize * 2, y:0}, /* seperate object due to comma */
     {x: unitSize, y: 0}, /*each one is a body part */
     {x: 0, y:0} /*starting the snake at the top left */
 ];
@@ -35,7 +35,7 @@ let snake = [ /*Square brackets are used to define arrays. An array is an ordere
 /* adding an event listener to listen for key events */
 
 window.addEventListener("keydown", changeDirection); /* the even is keydown */
-resetBtn.addEventListener("click", resetGame) /* when we click resetbtn, we will envoke the reset game function */
+resetBtn.addEventListener("click", resetGame); /* when we click resetbtn, we will envoke the reset game function */
 
 gameStart(); /*function for game */
 
@@ -58,7 +58,9 @@ function drawFood(){
 }; /* I will have to paint the food within gameboard */
 function moveSnake(){};
 function drawSnake(){};
-function changeDirection(){};
+function changeDirection(event){ /* event added by chatGPT */
+
+};
 function checkGameOver(){};
 function displayGameOver(){};
 function resetGame(){};
