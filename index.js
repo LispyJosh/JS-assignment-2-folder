@@ -65,4 +65,3 @@ function checkGameOver(){};
 function displayGameOver(){};
 function resetGame(){};
 
-12:00- TROUBLE SHOOT
