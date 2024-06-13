@@ -64,7 +64,7 @@ function nextTick(){
 };
 function clearBoard(){
     ctx.fillStyle = boardBackground; /*the background colour I picked */
-    ctx.fillRect =(0, 0, gameWidth, gameHeight) 
+    ctx.fillRect (0, 0, gameWidth, gameHeight); 
 }; /*for re-painting the board*/
 function createFood(){
     function randomFood(min, max){
@@ -81,7 +81,14 @@ function drawFood(){
     ctx.fillRect(foodX, foodY, unitSize, unitSize); /*to fill a rectangle */
 }; /* I will have to paint the food within gameboard */
 function moveSnake(){};
-function drawSnake(){};
+function drawSnake(){
+    ctx.fillStyle = snakeColor; /*colour we chose */
+    ctx.strokeStyle = snakeBorder; 
+    snake.forEach(snakePart => { /*(for every snake part)*/
+        ctx.fillRect(snakePart.x, snakePart.y, unitSize, unitSize); /*each snake part has an X and Y coordinate */ /*how big the snake part is (25)*/
+        ctx.strokeRect(snakePart.x, snakePart.y, unitSize, unitSize);
+    })
+};
 function changeDirection(event){ /* event added by chatGPT */
 
 };
@@ -89,4 +96,3 @@ function checkGameOver(){};
 function displayGameOver(){};
 function resetGame(){};
 
-15:40- clearBoard
