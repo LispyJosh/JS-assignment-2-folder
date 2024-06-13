@@ -38,13 +38,15 @@ window.addEventListener("keydown", changeDirection); /* the even is keydown */
 resetBtn.addEventListener("click", resetGame); /* when we click resetbtn, we will envoke the reset game function */
 
 gameStart(); /*function for game */
+createFood();
+drawFood();
 
 function gameStart(){};
 function nextTick(){};
 function clearBoard(){}; /*for re-painting the board*/
 function createFood(){
     function randomFood(min, max){
-        const randNum = Math.round((Math.random() * (max - min) + min) / unitSize) * unitSize; /*this make it go in 25 size, idk*/
+        const randNum = Math.round((Math.random() * (max - min) + min) / unitSize) * unitSize; /*this makes it go in places divisible by 25 size, idk Y*/
         return randNum;
     }
     foodX = randomFood(0, gameWidth - unitSize); /*random number */
@@ -65,3 +67,4 @@ function checkGameOver(){};
 function displayGameOver(){};
 function resetGame(){};
 
+12:30 delete me 
