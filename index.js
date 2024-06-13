@@ -80,7 +80,11 @@ function drawFood(){
     ctx.fillStyle = foodColor;
     ctx.fillRect(foodX, foodY, unitSize, unitSize); /*to fill a rectangle */
 }; /* I will have to paint the food within gameboard */
-function moveSnake(){};
+function moveSnake(){
+    const head = {x: snake[0].x + xVelocity, /*making the head of the snake (X cordinate/front part) */
+                    y: snake[0].y + yVelocity};
+    snake.unshift(head);
+};
 function drawSnake(){
     ctx.fillStyle = snakeColor; /*colour we chose */
     ctx.strokeStyle = snakeBorder; 
