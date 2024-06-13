@@ -38,12 +38,34 @@ window.addEventListener("keydown", changeDirection); /* the even is keydown */
 resetBtn.addEventListener("click", resetGame); /* when we click resetbtn, we will envoke the reset game function */
 
 gameStart(); /*function for game */
-createFood();
-drawFood();
 
-function gameStart(){};
-function nextTick(){};
-function clearBoard(){}; /*for re-painting the board*/
+
+function gameStart(){
+    running= true; /*the game is currently running */
+    scoreText.textContent = score; /*the score text = the score, initially 0 */
+    createFood(); 
+    drawFood();
+    nextTick(); /* what we want every round*/
+};
+function nextTick(){
+    if(running){ /*the game is currently running */
+        setTimeout(()=>{ /* order of steps */ /*using Arrow Function */
+            clearBoard(); /*first clear board */
+            drawFood();
+            moveSnake();
+            drawSnake();
+            checkGameOver();
+            nextTick();
+        }, 75) /*how often a game tick occurs*/ /*75 milliseconds*/
+    }
+    else{ /*else Statement! */
+        displayGameOver(); /* if the game isnt running, it's game over */
+    }
+};
+function clearBoard(){
+    ctx.fillStyle = boardBackground; /*the background colour I picked */
+    ctx.fillRect =(0, 0, gameWidth, gameHeight) 
+}; /*for re-painting the board*/
 function createFood(){
     function randomFood(min, max){
         const randNum = Math.round((Math.random() * (max - min) + min) / unitSize) * unitSize; /*this makes it go in places divisible by 25 size, idk Y*/
@@ -67,4 +89,4 @@ function checkGameOver(){};
 function displayGameOver(){};
 function resetGame(){};
 
-12:30 delete me 
+15:40- clearBoard
