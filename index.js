@@ -84,6 +84,15 @@ function moveSnake(){
     const head = {x: snake[0].x + xVelocity, /*making the head of the snake (X cordinate/front part) */
                     y: snake[0].y + yVelocity};
     snake.unshift(head);
+    /* if food is eaten */
+    if(snake[0].x == foodX && snake[0].y == foodY){ /*if the cordinates line up with snake, it will eat the apple */
+        score+=1; /*add 1 to score */
+        scoreText.textContent = score; /*change the score text */
+        createFood(); /*then create a new food object */
+    }
+    else{
+        snake.pop(); /*this will elimate tail everytime the snake moves */
+    }
 };
 function drawSnake(){
     ctx.fillStyle = snakeColor; /*colour we chose */
@@ -94,9 +103,23 @@ function drawSnake(){
     })
 };
 function changeDirection(event){ /* event added by chatGPT */
+    const keyPressed = event.keyCode;
+    console.log(keyPressed); /*found these in the console */
+    const LEFT = 37;
+    const UP = 38;
+    const RIGHT = 39;
+    const DOWN = 40
+
+    const goingUp = (yVelocity == -unitSize)
+    const goingDown = (yVelocity == -unitSize)
+    const goingRight = (yVelocity == -unitSize)
+    const goingLeft = (yVelocity == -unitSize)
+    
 
 };
 function checkGameOver(){};
 function displayGameOver(){};
 function resetGame(){};
 
+
+21:38
