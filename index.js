@@ -160,9 +160,13 @@ function checkGameOver(){
             break;
     }
 
-    /*for hitting it's own body */
+    /*for hitting it's own body, create a forloop for this */
 
-    
+    for(let i = 1; i < snake.length; i+=1){ /*not to begin at the head */
+        if(snake[i].x == snake[0].x && snake[i].y == snake[0].y){ /* "i" equals body part */ /*if head equals to (hits) body part */
+            running= false;
+        }
+    }
 };
 function displayGameOver(){};
 function resetGame(){};
