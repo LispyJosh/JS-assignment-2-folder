@@ -12,6 +12,7 @@ h1{ /* header text details */
     color: black;
     margin-left: 1em;
     margin-right: 1em;
+    font-family: 'Poppins', sans-serif; 
     
 }
 .navbar ul {
