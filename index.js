@@ -139,6 +139,30 @@ function changeDirection(event){ /* event added by chatGPT */
     
 
 };
-function checkGameOver(){};
+function checkGameOver(){
+
+    /* for the border */
+    switch(true){
+        case (snake[0].x < 0): /* less than 0, did we go over the left border */
+            running = false;
+            break; 
+    
+        case (snake[0].x >= gameWidth): /* is greater than or equal to the game width, did we go over the right border */
+            running = false;
+            break;
+            
+        case (snake[0].y < 0): /* is less than 0, did we go over the top border */
+            running = false;
+            break;    
+            
+        case (snake[0].y >= gameHeight): /* is greater than or equal to the game height, did we go over the bottom border */
+            running = false;
+            break;
+    }
+
+    /*for hitting it's own body */
+
+    
+};
 function displayGameOver(){};
 function resetGame(){};
