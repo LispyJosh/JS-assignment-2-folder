@@ -111,15 +111,34 @@ function changeDirection(event){ /* event added by chatGPT */
     const DOWN = 40
 
     const goingUp = (yVelocity == -unitSize)
-    const goingDown = (yVelocity == -unitSize)
-    const goingRight = (yVelocity == -unitSize)
-    const goingLeft = (yVelocity == -unitSize)
+    const goingDown = (yVelocity == unitSize)
+    const goingRight = (xVelocity == unitSize)
+    const goingLeft = (xVelocity == -unitSize)
+
+    switch(true){
+        case(keyPressed == LEFT && !goingRight): /*this stops us from going into our body and cutting through */ /*go left you cant then go right straight away */
+            xVelocity = -unitSize; /*if I want to go left */
+            yVelocity = 0; /* we are no longer going up or down */
+            break; /*to exit statement */
+
+        case(keyPressed == UP && !goingDown): /*this stops us from going into our body and cutting through */ /*go up you cant then go down straight away */
+        xVelocity = 0; /*if I want to go up */
+        yVelocity = -unitSize; 
+        break; /*to exit statement */    
+
+        case(keyPressed == RIGHT && !goingLeft): /*this stops us from going into our body and cutting through */ /*go right you cant then go left straight away */
+        xVelocity = unitSize; /*if I want to go right */
+        yVelocity = 0; 
+        break; /*to exit statement */   
+        
+        case(keyPressed == DOWN && !goingUp): /*this stops us from going into our body and cutting through */ /*go Down you cant then go up straight away */
+        xVelocity = 0; /*if I want to go down */
+        yVelocity = unitSize; 
+        break; /*to exit statement */ 
+    }
     
 
 };
 function checkGameOver(){};
 function displayGameOver(){};
 function resetGame(){};
-
-
-21:38
