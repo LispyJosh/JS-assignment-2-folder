@@ -31,4 +31,8 @@ https://webflow.com/blog/fonts-for-web-design?utm_source=google&utm_medium=searc
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
 for font
 
+turned speed bug into a feature
+
+copied snake to add
+
 
