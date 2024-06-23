@@ -3,3 +3,4 @@ It includes a recreation of the iconic Snake game, developed using JavaScript, H
 The Snake game offers customizable speed settings and demonstrates the integration of game development with web design. 
 This project merges my interests in gaming and web development, showcasing the significance of mobile games and the versatility of JavaScript in creating engaging experiences.
 
+To view the website, please check out the index.html file
